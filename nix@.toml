@@ -1,0 +1,21 @@
+[atom]
+id = "nix"
+version = "0.1.0"
+
+[backend.nix]
+fetcher = "local"
+
+[fetcher.local]
+root = ""
+
+[fetcher.npins]
+root = "nix/npins"
+
+[fetch.all]
+path = ""
+
+[fetch.pkgs]
+args = [{}]
+fetcher = "npins"
+import = true
+name = "nixpkgs"
